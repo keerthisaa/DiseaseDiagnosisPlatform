@@ -1,58 +1,131 @@
-# 🩺 Disease Diagnosis Platform
+🩺 Disease Diagnosis Platform
+A user-friendly, AI-powered platform that helps in early diagnosis of multiple diseases using machine learning. Built entirely with Streamlit, it provides fast and reliable predictions by analyzing user inputs using trained ML models.
 
-A user-friendly, AI-powered platform designed to assist in the early diagnosis of multiple diseases using machine learning. Built entirely with **Streamlit**, this platform provides quick, accurate predictions by analyzing user input and trained models for various diseases.
+📌 Table of Contents
+Overview
 
----
+Features
 
-## 🚀 Overview
+Supported Diseases
 
-The **Disease Diagnosis Platform** enables users to input medical-related parameters and receive predictive insights regarding potential diseases. The platform supports multiple disease predictions in a centralized manner, offering accessibility, usability, and fast results through a seamless interface.
+Tech Stack
 
----
+Directory Structure
 
-## 🔍 Features
+Setup Instructions
 
-- 🔬 Predict multiple diseases using a single web interface  
-- 🧠 ML-powered backend trained on medical datasets  
-- 📈 Display of prediction results with interpretation  
-- 💻 Streamlit-powered clean and interactive UI  
-- 🔐 Data privacy and no data storage  
-- 📱 Responsive design accessible across devices  
+Usage
 
----
+Contributing
 
-## 🧪 Supported Diseases
+License
 
-This platform is designed to predict multiple common diseases, including but not limited to:
+🚀 Overview
+The Disease Diagnosis Platform allows users to input health-related parameters and receive predictions about potential diseases. It integrates multiple ML models into one interactive web interface.
 
-- Diabetes  
-- Heart Disease  
-- Parkinson's Disease  
-- Breast Cancer  
-- Chronic Disease  
-- Liver Disease
-- Hepatatis
-- Lung Cancer
----
+🔍 Features
+🔬 Predict multiple diseases using a single interface
 
-## 🛠️ Tech Stack
+🧠 Machine Learning–powered backend
 
-- **Frontend:** Streamlit  
-- **Backend:** Python, Pandas, NumPy  
-- **Machine Learning:** Scikit-learn  
-- **Model Storage:** Pickle  
-- **IDE:** Jupyter Notebook / VS Code  
+📊 Real-time predictions with result interpretation
 
----
-Follow these steps to run the project locally:
+🖥️ Streamlit-based intuitive and responsive UI
 
-```bash
+🛡️ No data is stored; ensures privacy
+
+📱 Accessible on desktop, tablet, and mobile
+
+🧪 Supported Diseases
+Currently supports predictions for:
+
+✅ Diabetes
+
+✅ Heart Disease
+
+✅ Parkinson's Disease
+
+✅ Breast Cancer
+
+✅ Chronic Kidney Disease
+
+✅ Liver Disease
+
+✅ Hepatitis
+
+✅ Lung Cancer
+
+🛠️ Tech Stack
+Layer	Technology
+Frontend	Streamlit
+Backend	Python, Pandas
+ML Models	Scikit-learn
+File Format	Pickle (.pkl)
+IDE	VS Code / Jupyter
+
+📁 Directory Structure
+bash
+Copy
+Edit
+DiseaseDiagnosisPlatform/
+│
+├── code/
+│   ├── __init__.py
+│   ├── DiseaseModel.py
+│   ├── helper.py
+│   ├── train.py
+│   └── data/
+│       ├── clean_dataset.tsv
+│       ├── dataset.csv
+│       ├── lung_cancer.csv
+│       ├── symptom_Description.csv
+│       ├── symptom_precaution.csv
+│       └── Symptom-severity.csv
+│
+├── models/                  # Trained model files (.pkl)
+├── disease_prediction_env/ # Virtual environment (optional)
+├── app.py                  # Streamlit frontend file
+├── data.db                 # Database if used
+├── *.jpg / *.png / *.gif   # Image files for UI
+├── requirements.txt        # Required Python packages
+└── README.md               # Project documentation
+⚙️ Setup Instructions
+✅ Prerequisites
+Python 3.8 or above
+
+Git installed
+
+pip (Python package manager)
+
+💻 Installation Steps
+bash
+Copy
+Edit
+# 1. Clone the repository
 git clone https://github.com/keerthisaa/DiseaseDiagnosisPlatform.git
 cd DiseaseDiagnosisPlatform
-python -m venv venv
-source venv/bin/activate   # For Linux/Mac
-venv\Scripts\activate
-pip install -r requirements.txt
-streamlit run app.py
 
+# 2. Create and activate virtual environment
+python -m venv venv
+# For Windows
+venv\Scripts\activate
+# For Linux/Mac
+source venv/bin/activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Run the Streamlit app
+streamlit run app.py
+▶️ Usage
+The web app will open in your browser.
+
+Enter the required medical parameters.
+
+View instant prediction results and interpretation.
+
+Models are pre-trained; no retraining needed for basic use.
+
+
+Open a Pull Request
 
