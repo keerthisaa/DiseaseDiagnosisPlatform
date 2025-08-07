@@ -6,13 +6,12 @@ A user-friendly, AI-powered platform that helps in early diagnosis of multiple d
 
 ## 📌 Table of Contents
 
-- [Overview](#-overview)  
-- [Features](#-features)  
-- [Supported Diseases](#-supported-diseases)  
-- [Tech Stack](#-tech-stack)  
-- [Directory Structure](#-directory-structure)  
-- [Setup Instructions](#-setup-instructions)  
-- [Usage](#-usage)  
+- [🚀 Overview](#-overview)  
+- [🔍 Features](#-features)  
+- [🧪 Supported Diseases](#-supported-diseases)  
+- [🛠️ Tech Stack](#-tech-stack)  
+- [📁 Directory Structure](#-directory-structure)  
+- [⚙️ Setup Instructions](#-setup-instructions)  
 
 ---
 
@@ -28,14 +27,14 @@ The **Disease Diagnosis Platform** allows users to input health-related paramete
 - 🧠 Machine Learning–powered backend  
 - 📊 Real-time predictions with result interpretation  
 - 🖥️ Streamlit-based intuitive and responsive UI  
-- 🛡️ No data is stored; ensures privacy  
-- 📱 Accessible on desktop, tablet, and mobile  
+- 🛡️ No data is stored; ensures user privacy  
+- 📱 Accessible on desktop, tablet, and mobile devices  
 
 ---
 
 ## 🧪 Supported Diseases
 
-Currently supports predictions for:
+This platform currently supports prediction for:
 
 - ✅ Diabetes  
 - ✅ Heart Disease  
@@ -62,41 +61,58 @@ Currently supports predictions for:
 
 ## 📁 Directory Structure
 
-```bash
 DiseaseDiagnosisPlatform/
 │
 ├── code/
-│   ├── __init__.py
-│   ├── DiseaseModel.py
-│   ├── helper.py
-│   ├── train.py
-│   └── data/
-│       ├── clean_dataset.tsv
-│       ├── dataset.csv
-│       ├── lung_cancer.csv
-│       ├── symptom_Description.csv
-│       ├── symptom_precaution.csv
-│       └── Symptom-severity.csv
+│ ├── init.py
+│ ├── DiseaseModel.py
+│ ├── helper.py
+│ ├── train.py
+│ └── data/
+│ ├── clean_dataset.tsv
+│ ├── dataset.csv
+│ ├── lung_cancer.csv
+│ ├── symptom_Description.csv
+│ ├── symptom_precaution.csv
+│ └── Symptom-severity.csv
 │
-├── models/                  # Trained model files (.pkl)
 ├── disease_prediction_env/ # Virtual environment (optional)
-├── app.py                  # Streamlit frontend file
-├── data.db                 # Database if used
-├── *.jpg / *.png / *.gif   # Image files for UI
-├── requirements.txt        # Required Python packages
-└── README.md               # Project documentation
-⚙️ Setup Instructions
-✅ Prerequisites
-Python 3.8 or above
+├── models/ # Trained model files (.pkl)
+│
+├── app.py # Main Streamlit app
+├── requirements.txt # Python dependencies
+├── data.db # SQLite database (if used)
+│
+├── assets/ # (Optional) move all images here
+│ ├── logo.png
+│ ├── heart.jpg
+│ ├── liver.jpg
+│ ├── lung.jpg
+│ ├── negative.jpg
+│ ├── positive.jpg
+│ ├── d3.jpg
+│ ├── h.png
+│ ├── j.jpg
+│ ├── heart2.jpg
+│ └── 63.gif
+│
+└── README.md
 
-Git installed
+---
 
-pip (Python package manager)
+## ⚙️ Setup Instructions
 
-💻 Installation Steps
-bash
-Copy
-Edit
+### ✅ Prerequisites
+
+- Python 3.8 or above  
+- Git installed  
+- pip (Python package manager)
+
+---
+
+### 💻 Installation Steps
+
+```bash
 # 1. Clone the repository
 git clone https://github.com/keerthisaa/DiseaseDiagnosisPlatform.git
 cd DiseaseDiagnosisPlatform
@@ -115,11 +131,3 @@ pip install -r requirements.txt
 
 # 4. Run the Streamlit app
 streamlit run app.py
-▶️ Usage
-The web app will open in your browser.
-
-Enter the required medical parameters.
-
-View instant prediction results and interpretation.
-
-Models are pre-trained; no retraining needed for basic use.
