@@ -61,43 +61,44 @@ This platform currently supports prediction for:
 
 ## 📁 Directory Structure
 
+
+```bash
 DiseaseDiagnosisPlatform/
 │
 ├── code/
-│ ├── init.py
-│ ├── DiseaseModel.py
-│ ├── helper.py
-│ ├── train.py
-│ └── data/
-│ ├── clean_dataset.tsv
-│ ├── dataset.csv
-│ ├── lung_cancer.csv
-│ ├── symptom_Description.csv
-│ ├── symptom_precaution.csv
-│ └── Symptom-severity.csv
+│   ├── __init__.py
+│   ├── DiseaseModel.py
+│   ├── helper.py
+│   ├── train.py
+│   └── data/
+│       ├── clean_dataset.tsv
+│       ├── dataset.csv
+│       ├── lung_cancer.csv
+│       ├── symptom_Description.csv
+│       ├── symptom_precaution.csv
+│       └── Symptom-severity.csv
 │
-├── disease_prediction_env/ # Virtual environment (optional)
-├── models/ # Trained model files (.pkl)
+├── disease_prediction_env/       # Virtual environment (optional)
+├── models/                       # Trained model files (.pkl)
 │
-├── app.py # Main Streamlit app
-├── requirements.txt # Python dependencies
-├── data.db # SQLite database (if used)
+├── app.py                        # Main Streamlit app
+├── requirements.txt              # Python dependencies
+├── data.db                       # SQLite database (if used)
 │
-├── assets/ # (Optional) move all images here
-│ ├── logo.png
-│ ├── heart.jpg
-│ ├── liver.jpg
-│ ├── lung.jpg
-│ ├── negative.jpg
-│ ├── positive.jpg
-│ ├── d3.jpg
-│ ├── h.png
-│ ├── j.jpg
-│ ├── heart2.jpg
-│ └── 63.gif
+├── assets/                       # (Optional) move all images here
+│   ├── logo.png
+│   ├── heart.jpg
+│   ├── liver.jpg
+│   ├── lung.jpg
+│   ├── negative.jpg
+│   ├── positive.jpg
+│   ├── d3.jpg
+│   ├── h.png
+│   ├── j.jpg
+│   ├── heart2.jpg
+│   └── 63.gif
 │
 └── README.md
-
 ---
 
 ## ⚙️ Setup Instructions
