@@ -13,8 +13,6 @@ A user-friendly, AI-powered platform that helps in early diagnosis of multiple d
 - [Directory Structure](#-directory-structure)  
 - [Setup Instructions](#-setup-instructions)  
 - [Usage](#-usage)  
-- [Contributing](#-contributing)  
-- [License](#-license)
 
 ---
 
